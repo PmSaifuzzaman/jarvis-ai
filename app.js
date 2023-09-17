@@ -103,6 +103,11 @@ function takeCommand(message){
         const finalText = "Opening Calculator";
         speak(finalText);
     }
+    else if(message.includes('settings')) {
+        window.open('Settings:///')
+        const finalText = "Opening Settings";
+        speak(finalText);
+    }
 
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
